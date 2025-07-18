@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="unpam.png" alt="Logo" width="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+   <section class="hero" id="home">
+        <div class="hero-content">
+
+            <!-- Bagian Teks -->
+            <div class="text-section">
+            <h1>Welcome [Nama Anda] Di Website kami</h1>
+            <h3>Halo, Saya Ana Widyowati</h3>
+
+            <p>
+                Saya seorang pelajar Sistem Informasi yang bersemangat mempelajari teknologi dan pengembangan sistem. 
+                Tujuan saya adalah menghubungkan dunia bisnis dan teknologi untuk menciptakan solusi digital yang bermanfaat.
+            </p>
+            </div>
+
+            <!-- Bagian Gambar -->
+            <div class="image-section">
+            <img src="profilsatu.jpg" alt="Profile Picture">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--About Me-->
+        <section class="about-me" id="about">
+    <div class="about-container">
+        <!-- Foto -->
+        <div class="about-image">
+            <img src="profildua.jpg" alt="Foto Saya">
+        </div>
+
+        <!-- Teks -->
+        <div class="about-text">
+            <h2>Tentang Saya</h2>
+            <p>Saya saat ini berkuliah di Universitas Pamulang (UNPAM), jurusan Sistem Informasi semester 4.  
+               Saat ini saya sedang mendalami pembelajaran di bidang teknologi informasi.  
+               Pengalaman saya di bidang ini masih dalam tahap pengembangan, namun saya bersemangat untuk terus belajar 
+               dan mengasah keterampilan agar dapat memberikan kontribusi yang bermanfaat di dunia teknologi.
+</p>
+
+
+            <!-- Ikon Sosial di bawah paragraf -->
+            <div class="social-icons">
+                <span>Temui saya di:</span>
+                <a href="https://www.instagram.com/ana_widyo?igsh=MTk3ZWI5bGpkZ2Foeg==" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/share/1EAASyRZyQ/?mibextid=qi2Omg" target="_blank">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com/@na.wdy?_t=ZS-8y8cZAKBirQ&_r=1" target="_blank">
+                    <img src="tiktok.png" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </section>
+
+    <!-- Skills-->
+
+    <section class="skills" id="skills">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="uiux-icon.png" alt="Desain UI/UX">
+                <h3>Desain UI/UX</h3>
+                <p>Mendesain antarmuka yang menarik, mudah digunakan, dan ramah pengguna.</p>
+            </div>
+            <div class="skill-card">
+                <img src="webdesign-icon.png" alt="Desain Website">
+                <h3>Desain Website</h3>
+                <p>Membangun desain website yang modern, elegan, dan responsif.</p>
+            </div>
+            <div class="skill-card">
+                <img src="appdesign-icon.png" alt="Desain Aplikasi">
+                <h3>Pengembangan Aplikasi</h3>
+                <p>Mengembangkan aplikasi web dan mobile yang efisien, scalable, dan mudah digunakan.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Hubungi Saya Section -->
+    <section class="contact" id="contact">
+        <h2>Hubungi Saya</h2>
+        <div class="form-container">
+            <form id="contactForm">
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Nama" required>
+                
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal_lahir" required>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+                
+                <label>Pesan:</label>
+                <textarea name="pesan" placeholder="Tulis pesan Anda..." required></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+
+            <div class="output">
+                <p id="currentTime"></p>
+                <p><strong>Nama:</strong> <span id="outputNama"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="outputTanggal"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="outputGender"></span></p>
+                <p><strong>Pesan:</strong> <span id="outputPesan"></span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Created By anawidyo141</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

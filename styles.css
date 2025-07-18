@@ -1,0 +1,385 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #8e44ad;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* membuat gambar bulat */
+    object-fit: cover;  /* menjaga agar gambar tetap proporsional */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #39FF14;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff69b4;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #9D50BB 0%, #C96DD8 50%, #FF7EB3 100%);
+    padding: 100px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row; /* teks kiri, gambar kanan */
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-section {
+    flex: 1;
+    color: white;
+}
+
+.text-section h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #39FF14; /* neon green */
+    font-weight: bold;
+}
+
+.text-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+/* Gambar profil di kanan */
+.image-section img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section h1 {
+        font-size: 32px;
+    }
+
+    .image-section img {
+        width: 250px;
+    }
+}
+
+
+
+
+/* Ikon media sosial */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons span {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 28px;  /* ukuran icon kecil */
+    height: 28px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+
+/* Tentang Saya */
+.about-me {
+    background: linear-gradient(135deg, #8E2DE2 0%, #C779D0 50%, #4BC0C8 100%);
+    padding: 100px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-color: #BF00FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #39FF14;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Tambahan untuk "Temui saya di:" */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons span {
+    color: #000000;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+
+/* Keahlian Saya */
+.skills {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #9D50BB 0%, #C96DD8 50%, #FF7EB3 100%);
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #39FF14;
+    font-weight: bold;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Bagian Hubungi Saya */
+.contact {
+    background: linear-gradient(135deg, #8E2DE2 0%, #C779D0 50%, #4BC0C8 100%);
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    text-align: left;
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2d3748;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="date"]:focus,
+form textarea:focus {
+    border-color: #3182ce;
+}
+
+form input[type="radio"] {
+    margin-right: 6px;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Bagian Output */
+.output {
+    flex: 1 1 250px;
+    text-align: left;
+    background: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+    background-color: #ffffff;
+}
